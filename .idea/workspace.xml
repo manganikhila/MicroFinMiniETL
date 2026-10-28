@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52714ca3-7dd1-4074-81e4-01f700a67a12" name="Changes" comment="Added from pipelinerunner.py to .conf which is till&#10;Step-5">
+      <change beforePath="D:/MicroFinMiniETL/.gitignore" beforeDir="false" afterPath="D:/MicroFinMiniETL/.gitignore" afterDir="false" />
       <change beforePath="D:/MicroFinMiniETL/.idea/workspace.xml" beforeDir="false" afterPath="D:/MicroFinMiniETL/.idea/workspace.xml" afterDir="false" />
       <change beforePath="D:/MicroFinMiniETL/conf/dw_collection_ar_loan.conf" beforeDir="false" afterPath="D:/MicroFinMiniETL/conf/dw_collection_ar_loan.conf" afterDir="false" />
+      <change beforePath="D:/MicroFinMiniETL/conf/microfin_dwh_dev.conf" beforeDir="false" afterPath="D:/MicroFinMiniETL/conf/microfin_dwh_dev.conf" afterDir="false" />
+      <change beforePath="D:/MicroFinMiniETL/minietl/pipeline_commons.py" beforeDir="false" afterPath="D:/MicroFinMiniETL/minietl/pipeline_commons.py" afterDir="false" />
+      <change beforePath="D:/MicroFinMiniETL/minietl/spark_pipeline_step.py" beforeDir="false" afterPath="D:/MicroFinMiniETL/minietl/spark_pipeline_step.py" afterDir="false" />
       <change beforePath="D:/MicroFinMiniETL/pipeline_runner.py" beforeDir="false" afterPath="D:/MicroFinMiniETL/pipeline_runner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +59,11 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MicroFinMiniETL\minietl" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="52714ca3-7dd1-4074-81e4-01f700a67a12" name="Changes" comment="" />

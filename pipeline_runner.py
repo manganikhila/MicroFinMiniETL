@@ -26,15 +26,18 @@ def main():
     load_source(spark, conf["variables"])
 
     # 4. Build the step objects from class-name (PipelineBuilder.buildPipeline)
-    pipeline = build_pipeline(SparkPipelineEnv(spark), conf)
+    pipeline = build_pipeline(SparkPipelineEnv(spark, variables=conf["variables"]), conf)
 
     # 5. Run them (SparkPipeline.runPipeline)
     pipeline.run_pipeline()
 
     # 6. Temporary check of the result
     spark.sql("""
-        select ar_flag, count(*) as loans, round(sum(loan_amount), 2) as total_lent
-        from final_loan_ar
+        select ar_flag,
+               count(*)                       as loans,
+               min(dw_collection_ar_loan_key) as first_key,
+               max(dw_collection_ar_loan_key) as last_key
+        from dw_collection_ar_loan
         group by ar_flag
         order by ar_flag
     """).show()
